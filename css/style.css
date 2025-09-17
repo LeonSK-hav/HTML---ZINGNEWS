@@ -1,0 +1,642 @@
+/* body không có khoảng cách */
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+}
+/* định nghĩa thẻ a cho tất cả link liên kết  */
+a{
+    color: #333;
+    font-size: 15px;
+    /* không có gạch ngang dưới chữ */
+    text-decoration: none;
+    /* in đậm */
+    font-weight: bold;
+}
+
+a:hover{
+    color: #369;
+}
+.row 
+{
+    float: left;
+    width: 100%;
+}
+/* XỬ LÝ PHẦN TOP: START */
+.top 
+{
+    background-color: white;
+    min-height: 40px;
+    border-bottom: 1px #accc solid;
+    padding: 10px 0px;
+}
+.logo
+{
+    float: left;
+    width: 15%;
+    /* cho cách menu 20px */
+    margin-right: 20px;
+}
+.logo img{
+   width: 100%;
+}
+
+.search
+{
+    float: right;
+    width: 10%;
+}
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+}
+.menu ul{
+    /* thẻ ul cách các lề 10px */
+    padding: 10px;
+}
+.menu ul li{
+    /* không sử dụng dấu chấm đầu dòng */
+    list-style-type: none;
+    /* để các thẻ lên 1 dòng */
+    display: inline;
+    padding: 10px 5px;
+    position: relative;
+}
+
+.menu ul li a{
+    color:#666;
+}
+
+.menu ul li a:hover
+{
+    color: rgb(86, 199, 241);
+}
+
+.menu ul li a:hover::after
+{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px rgb(86, 199, 241) solid;
+}
+/* XỬ LÝ PHẦN TOP: END */
+/* tin tức mới */
+.recentnews 
+{
+    background-color: #d8d8d8;
+    min-height: 200px;
+}
+/* tin tức */
+.content
+{
+    /*background-color: white;
+    min-height: 700px;*/
+}
+/*  */
+.footer
+{
+    background-color: white;
+    min-height: 200px;
+}
+
+.paddingtopbottom
+{
+    padding: 30px 0px;
+
+}
+/*  */
+/* box đầu tiên của web */
+/*  */
+.boxcangiua
+{
+    width: 75%;
+    margin: 0 auto;
+}
+/* khoảng cách lề trên dưới */
+.margintopbottom
+{
+    margin: 10px 0px;
+}
+/* khoảng cách lề bên phải */
+.marginphai
+{
+    margin-right: 2%;
+}
+/* độ dài */
+.minheight
+{
+    min-height: 600px;
+}
+/* box đầu tiên tính từ trái */
+.boxtrai
+{
+    float: left;
+    width: 25%;
+}
+/* box thứ hai ở giữa */
+.boxgiua
+{
+    float: left;
+    width: 46%;
+}
+/* box thứ 3 cuối cùng */
+.boxphai
+{
+    float: left;
+    width: 25%;
+
+}
+
+.bgc
+{
+    background-color: aquamarine;
+}
+/* xử lý box news đầu tiên: start */
+.boxnews3,
+.boxnews1, 
+.boxnews2, 
+.boxnewsdanhmuc
+{
+    /* khoảng cách giữa các nội dung và đường kẻ */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+/* box tin tức 1 của img */
+.boxnews1 img, .boxnewsdanhmuc img
+{
+    width: 40%;
+    margin-right: 10px; 
+    float: left;
+}
+/* box tin tức 1 của text */
+.boxnews1 a{
+    color: #333;
+    font-size: 13px;
+    /* không có gạch ngang dưới chữ */
+    text-decoration: none;
+    /* in đậm */
+    font-weight: bold;
+}
+/* trạng thái con chuột di chuyển tới dòng liên kết */
+.boxnews1 a:hover{
+    color: #369;
+}
+
+/* dòng kẻ ngăn cách giữa các tin */
+.dongke
+{
+    border-bottom: 1px #ccc solid;
+}
+
+.dongke2
+{
+    border-bottom: 3px #000 solid;
+}
+.dongkephai
+{
+    /*margin-left: 5px;
+    border-right: 1px #ccc solid;*/
+}
+/*  */
+/* xử lý box news đầu tiên: end */
+
+/*  */
+/* xử lý box news thứ hai:start */
+/* box tin tức img của box2 và box3 */
+.lastnews img
+{
+    width:100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.boxnews2 img, .box2 img
+{
+    width:100%;
+}
+.boxnews2 img
+{
+    height: 180px;
+}
+.lastnews a
+{
+    color: #333;
+    font-size: 22pt;
+    /* không có gạch ngang dưới chữ */
+    text-decoration: none;
+    /* in đậm */
+    font-weight: bold;
+}
+
+.lastnews a:hover
+{
+    color: #369;
+}
+
+
+/* xử lý box news thứ hai: end */
+
+/*  */
+/* xử lý box news thứ 3: start */
+
+/* xử lý box news thứ 3: end */
+/*  */
+/* BOX ĐẦU TIÊN CỦA WEB: END */
+
+/* BOX THỨ HAI CỦA WEB: START */
+.marginbottom2
+{
+    margin-bottom: 30px;
+}
+
+.mrb20
+{
+    margin-bottom: 20px;
+}
+.hdemo
+{
+    min-height: 100px;
+}
+
+.bgboxcangiua2
+{
+    float:left;
+    width: 96%;
+    padding: 2%;
+    background-color: #FFDE76;
+    min-height: 600px;
+
+}
+.boxcangiua2
+{
+    width: 79%;
+    margin: 0 auto;
+    
+}
+
+.col6
+{
+    float: left;
+    width: 48%;
+}
+.col3
+{
+    float: left;
+    width: 24%;
+}
+
+.col3-1
+{
+    float: left;
+    width: 23%;
+}
+
+.col3 img, .col3-1 img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.boxmulti6
+{
+    position: relative;
+}
+.boxmulti6 img
+{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.bggra
+{
+     /* định vị vị trí của thẻ a */
+    position: absolute;
+    /* 100% của đối tượng chứa nó và lấy 100% đó trừ 10px của left để không bị tràn */
+    width: calc(94% -10px);
+    /* vị trí thẻ a cách lề dưới 10px */
+    bottom: 0px;
+    /* vị trí thẻ a cách lề trái 10px */
+    left: 0px;
+    padding: 3%;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+}   
+/* xử lý thẻ a */
+.bggra a{
+    font-size: 24pt;
+    color: white;
+    line-height: 100%;
+    text-shadow: 2px 2px 5px #000;
+}
+/* BOX THỨ HAI CỦA WEB: END */
+
+/* MỤC TIN TỨC THỨ 3: START */
+.box1
+{
+    float: left;
+    width: 70%;
+}
+
+.box2
+{
+    float: left;
+    width: 28%;
+}
+
+.boxnewsdanhmuc p{
+    color: gray
+}
+.boxnewsdanhmuc p span{
+    font-size: 10pt;
+}
+
+.boxnewsdanhmuc p a{
+    font-size: 10pt;
+    color: #666;
+}
+p{
+    margin: 5px;
+}
+/* MỤC TIN TỨC THỨ 3: END */
+
+/* MỤC TIN TỨC 3 CỘT: START*/
+.boxnews3cot
+{
+    float: left;
+    width: 48%;
+    min-height: 450px;
+}
+
+.col6-2
+{
+    float: left;
+    width: 100%;
+}
+
+.col6-2 img
+{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.col6-2 a
+{
+
+    font-size: 1.5rem;
+}
+
+.boxgiua2
+{
+    float: left;
+    width: 100%;
+}
+.boxgiua2 img
+{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.boxnews3 img
+{
+    width: 40%;
+    margin-left: 10px;
+    float: right;
+    border-radius: 10px;
+}
+/* MỤC TIN TỨC 3 CỘT: END*/
+
+
+/* MỤC TIN TỨC MAGAZINE: START */
+.tieudemgz
+{
+    margin-bottom: 30px;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.boxmagazine, .boxdanhmuc
+{
+    float: left;
+    width: 23.5%;
+    min-height: 450px;
+    position: relative;
+    
+}
+.boxmagazine
+{
+    transition: 0.5s;
+    overflow: hidden;
+}
+.boxmagazine img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    transition: 0.8s;
+    z-index: 0;
+}
+
+.tendanhmuc
+{
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    width: 40%;
+    background-color: #FFDE76;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    /*padding: 5px 0px;*/
+    z-index: 1;
+}
+
+.tentin
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    /*background-color: rgba(0, 0, 0, 0);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    text-align: center;
+    padding: 5%;
+    min-height: 200px;
+    z-index: 1;
+}
+.tentin a{
+    color: white;
+    font-size: 20pt;
+    font-family: serif ;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.tentin .icontin
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #000;
+    left: calc(50% - 15px);
+    bottom: 20px;
+    
+}
+.icontin
+{
+    color: #FFDE76;
+    font-size: 20pt;
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1;
+}
+.boxmagazine:hover img 
+{
+    transform: scale(1.2);
+}
+
+.boxmagazine:hover .icontin
+{
+    color: black;
+    background-color: #FFDE76;
+}
+.boxmagazine:hover .tentin a
+{
+    color: #FFDE76;
+}
+/* MỤC TIN TỨC MAGAZINE: END */
+
+/* MỤC TIN TỨC CỦA CÁC THỂ LOẠI: START */
+
+/* MỤC TIN TỨC CỦA CÁC THỂ LOẠI: END */
+
+
+/*FOOTER: START*/
+
+.footer p
+{
+    font-size: 14px;
+    color: #666;
+}
+.footer a
+{
+    font-weight: normal;
+    color: #666;
+}
+.rowleft
+{
+    float: left;
+    width: 68%;
+    min-height: auto;
+}
+
+.rowright
+{
+    float: left;
+    width: 30%;
+    min-height: auto;
+}
+
+.mgrtop
+{
+    margin-top: 20px;
+}
+/*FOOTER: END*/
+
+
+
+/* SLIDESHOW */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
