@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive</title>
+    <style>
+        body
+        {
+            margin: 0 auto;
+        }
+        .row
+        {
+            float: left;
+            width: 100%;
+        }
+
+        .mrb
+        {
+            margin-bottom: 20px;
+        }
+        .mr{
+            margin-right: 2%;
+        }
+        .boxleft
+        {
+            float: left;
+            width: 20%;
+        }
+        .boxmid
+        {
+            float: left;
+            width: 56%;
+        }
+        .boxright
+        {
+            float: left;
+            width: 20%;
+        }
+        .footer
+        {
+            min-height: 50px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1vw;
+        }
+        .header
+        {
+            width: 100%;
+            min-height: 100px;
+            line-height: 100px;
+            background-color: #ccc ;
+            font-size: 2vw;
+            /* chữ căn giữa */
+            text-align: center;
+        }
+
+        .demo
+        {
+            min-height: 200px;
+            background-color: #ccc;
+        }
+        .header img
+        {
+            width: 100%;
+        }
+        @media only screen and (max-width:600px)
+        {
+            .boxleft,
+            .boxmid,
+            .boxright{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            
+        }
+        .header img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="row header mrb">
+        <picture>
+            <source srcset="images/l3.webp" media="(max-width: 600px)">
+            <source srcset="images/l2.webp" media="(max-width: 900px)">
+            <source srcset="images/l1.webp">
+            <img src="images/l1.webp" alt="">
+        </picture>
+    </div>
+    <div class="row mrb">
+        <div class="boxleft demo mr"></div>
+        <div class="boxmid demo mr"></div>
+        <div class="boxright demo"></div>
+    </div>
+    <div class="row footer">© copyright Nguyen</div>
+</body>
+</html>
